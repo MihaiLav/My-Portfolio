@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="612" y1="936" x2="612" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="396" y1="576" x2="396" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="216" x2="216" y2="360" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="logo_2" data-name="logo 2">
+    <g>
+      <polygon class="cls-1" points="864 72 864 936 720 792 720 648 504 864 360 720 360 576 504 720 720 504 720 216 864 72"/>
+      <polygon class="cls-2" points="648 288 648 432 504 576 144 216 144 72 504 432 648 288"/>
+      <polygon class="cls-3" points="288 504 288 792 144 936 144 360 288 504"/>
+    </g>
+  </g>
+</svg>
