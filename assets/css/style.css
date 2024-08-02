@@ -7,10 +7,22 @@
 
 body {
   padding-bottom: 20000px;
+  background-color: rgb(20, 20, 20);
+}
+h1,
+h3 {
+  color: #e9e9e9;
+}
+h4,h2 {
+  color: #930C11;
+}
+
+p{
+  color: #e9e9e9;
 }
 
 .logo {
-  width: 4em;
+  width: 65px;
   cursor: pointer;
 }
 
@@ -19,19 +31,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
-  padding: 2% 300px;
+  padding: 10px 400px;
 }
 
 
 nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 0 25px;
 }
 
 nav ul li a {
-  color: black;
+  color: #e9e9e9;
   text-decoration: none;
   font-weight: bold;
 }
@@ -43,21 +54,28 @@ nav ul li a:hover {
 
 .hero {
   display: flex;
-  justify-content: center;
-  margin: 20px 0px;
+  justify-content: space-between;
   align-items: center;
+  margin: 112px 400px;
   
 }
 .hero-content {
-  line-height: 2;
-  width: 400px;
-  height: 400px;
+  width: 508px;
+}
+
+.title-name {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.description-hero {
+  line-height: 1.5;
+  margin-bottom: 48px;
 }
 
 .hero-image {
-  width: 300px;
-  height: 500px;
-  margin-right: 150px;
+  width: 400px;
+  height: 419px;
 }
 
 .image {
@@ -68,16 +86,15 @@ nav ul li a:hover {
 
 .cta-main {
   display: inline-block;
-  background-color: #f9004d;
+  background-color: #C41016;
   color: white;
+  text-align: center;
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 16px 24px;
   border-radius: 2px;
   transition: transform .4s;
-  margin-top: 30px;
-  
 }
 
 .cta-main:hover {
@@ -85,24 +102,31 @@ nav ul li a:hover {
   background-color: rgb(54, 54, 54);
 }
 
+.skills-container {
+  margin: 0 400px;
+}
 .section-title {
   display: flex;
-  justify-content: center;
-  margin: 100px 0;
+  justify-content: flex-start;
+  margin-top: 144px;
+  margin-bottom: 40px;
+  color:#C41016;
 }
 .skills {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
   color:rgb(236, 236, 236);
-  background-color: grey;
-  width: 400px;
-  padding: 100px 30px;
+  background-color: rgb(27, 27, 27);
+  padding: 70px 32px;
   border-radius: 5px;
-  margin: 0 10px
+}
+
+.card:not(:last-child) {
+  margin-right: 24px;
 }
 
 .img-dev {
@@ -115,57 +139,117 @@ nav ul li a:hover {
 
 .img-container {
   width: 50px;
+  margin-bottom: 32px;
 }
 
 .card-content {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .cta-secondary {
   display: inline-block;
-  background-color: #f9004d;
-  color: white;
+  background-color: #930C11;
+  color: #ffffff;
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 16px 24px;
   border-radius: 2px;
   transition: transform .4s;
-  margin-top: 30px;
-  
+  margin-top: 32px;
 }
 
+.cta-secondary:hover {
+  transform: scale(1.1);
+  background-color: #C41016;
+}
+
+.projects-container {
+  margin: 0 400px;
+}
 .buddhify-img {
-  width: 300px;
+  width: 350px;
   object-fit: contain;
 }
 
 .meditactive-img {
-  width: 300px;
+  width: 350px;
   object-fit: contain;
 }
 
 .img-project {
   display: flex;
   justify-content: center;
-  width: 400px;
-  height: 250px;
-  background-color: grey;
-
+  height: 400px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
 }
 
 .project-text {
   line-height: 2;
-  margin-top: 20px;
-  width: 400px;
+  margin-top: 40px;
 }
 
 .project-card {
-  padding: 10px;
+  width: 1000px;
+}
+
+.project-card:first-child {
+  margin-right: 24px;
 }
 
 .projects {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
+
+.container-contact {
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 400px;
+  padding: 70px 58px;
+}
+
+.title-contact {
+  padding-bottom: 32px
+}
+
+.text-contact {
+  width: 500px;
+  margin-right: 60px;
+}
+
+.info-contact {
+  line-height: 1.5;
+}
+
+
+.social-icon {
+  width: 50px;
+  margin-right: 32px;
+}
+
+.social-icons {
+  display: flex;
+
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 400px;
+  background-color: #1b1b1b;
+}
+
+span {
+  color:#e9e9e9;
+}
+
+.footer h4 {
+  line-height: 1.5;
+}
+
+
 
