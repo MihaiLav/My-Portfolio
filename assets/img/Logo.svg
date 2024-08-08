@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+<svg id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 864">
   <defs>
     <style>
       .cls-1 {
@@ -18,21 +18,33 @@
         fill: url(#linear-gradient-3);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="612" y1="936" x2="612" y2="72" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="468" y1="136" x2="468" y2="1000" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#dd1219"/>
       <stop offset=".27" stop-color="#d31117"/>
       <stop offset=".57" stop-color="#c41016"/>
       <stop offset=".87" stop-color="#ac0e14"/>
       <stop offset=".99" stop-color="#930c11"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="396" y1="576" x2="396" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-3" x1="216" x2="216" y2="360" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-2" x1="252" y1="496" x2="252" y2="1000" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="72" y1="136" x2="72" y2="712" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
   </defs>
   <g id="logo_2" data-name="logo 2">
     <g>
-      <polygon class="cls-1" points="864 72 864 936 720 792 720 648 504 864 360 720 360 576 504 720 720 504 720 216 864 72"/>
-      <polygon class="cls-2" points="648 288 648 432 504 576 144 216 144 72 504 432 648 288"/>
-      <polygon class="cls-3" points="288 504 288 792 144 936 144 360 288 504"/>
+      <polygon class="cls-1" points="720 0 720 864 576 720 576 576 360 792 216 648 216 504 360 648 576 432 576 144 720 0"/>
+      <polygon class="cls-2" points="504 216 504 360 360 504 0 144 0 0 360 360 504 216"/>
+      <polygon class="cls-3" points="144 432 144 720 0 864 0 288 144 432"/>
     </g>
   </g>
 </svg>
