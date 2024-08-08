@@ -11,12 +11,18 @@
 <body>
     <header>
         <a href="#">
-          <img src="assets/img/Logo.svg" class="logo" alt="logo-Mihai"></a>
+          <img src="assets/img/logo.svg" class="logo" alt="logo-Mihai"></a>
         <nav>
-            <a href="#" >CV</a>
-            <a href="#" >Projects</a>
-            <a href="#" >About</a>
-            <a href="#" >Contact</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="burger-menu">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="nav-links">
+                <a href="#">CV</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">About</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
     <section class="home">
@@ -33,7 +39,7 @@
             <a href="#" class="btn">Let's work together</a>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills">
         <div class="title-section">
             <h2>My skills</h2>
         </div>
@@ -80,51 +86,51 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects">
         <div class="title-section">
-            <h2>my projects</h2>
+            <h2>my work</h2>
         </div>
         <div class="cards-container">
             <div class="card-content">
                 <div class="img-container">
-                    <img class="project-img" src="assets/img/buddhify.png" alt="Buddhify cover">
+                    <img class="project-img" src="assets/img/buddhify.jpg" alt="Buddhify cover">
                 </div> 
                 <div class="title-card">
                     <h2>Buddhify</h2>
                 </div>
                 <div class="card-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Optio veniam iste nulla eius. Est aspernatur.</p>
+                    <p>Redesigned a meditation app website for a more serene user experience with enhanced visuals and interactive elements.</p>
                 </div>
-                <a href="#" class="btn">View full Project</a>
+                <div class="button-project">
+                    <a href="#" class="btn">View full Project</a>
+                </div>
+                
             </div>
             <div class="card-content">
                 <div class="img-container">
-                    <img class="project-img" src="assets/img/buddhify.png" alt="Buddhify cover">
+                    <img class="project-img" src="assets/img/meditactive.jpg" alt="Buddhify cover">
                 </div>  
                 <div class="title-card">
                     <h2>MeditActive</h2>
                 </div>
                 <div class="card-description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Optio veniam iste nulla eius. Est aspernatur.</p>
+                    <p>Developed brand guidelines and created social media mockups for a comprehensive and cohesive brand identity</p>
                 </div>
-                <a href="#" class="btn">View full Project</a>
+                <div class="button-project">
+                    <a href="#" class="btn">View full Project</a>
+                </div>
             </div>
         </div>
     </section>
     
-    <section class="contact">
+    <section id="contact">
         <div class="contact-form">
             <div class="contact-text">
                 <div class="contact-title">
                     <h2>Let's work together on your new project</h2>
                 </div>
                 <div class="contact-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Magnam, sint! Illum inventore, amet aliquid maiores sed sequi 
-                        laboriosam soluta! Dolore voluptatibus deserunt similique explicabo 
-                        qui debitis, optio quisquam rem reiciendis?
+                    <p>Whether you have a groundbreaking idea waiting to be brought to life or you need assistance with an existing project, this is the perfect place to connect. Your vision is the driving force behind our collaboration, and together, we can turn your ideas into reality. Feel free to reach out, and let's begin this creative adventure together.
                     </p>
                 </div>
             </div>
@@ -147,6 +153,5 @@
     <div class="legals">
         <p>All rights reserved. Designed by <span>Mihai Lavric</span></p>
     </div>
-
 </body>
 </html>
