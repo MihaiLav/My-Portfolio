@@ -9,22 +9,24 @@
     <title>My portfolio</title>
 </head>
 <body>
+
     <header>
-        <a href="#">
-          <img src="assets/img/logo.svg" class="logo" alt="logo-Mihai"></a>
         <nav>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="burger-menu">
-                <i class="fa fa-bars"></i>
-            </label>
-            <div class="nav-links">
-                <a href="#">CV</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">About</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='/index.html'><img src='assets/img/Logo.svg'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-content">
             <h1>Hi, It's <span>Mihai</span></h1>
@@ -36,7 +38,7 @@
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Let's work together</a>
+            <a href="/contacts/contacts.html" class="btn">Let's work together</a>
         </div>
     </section>
     <section id="skills">
@@ -124,7 +126,7 @@
     </section>
     
     <section id="contact">
-        <div class="contact-form">
+        <div class="contact-container">
             <div class="contact-text">
                 <div class="contact-title">
                     <h2>Let's work together on your new project</h2>
@@ -135,7 +137,7 @@
                 </div>
             </div>
             <div class="button-contact">
-                <a href="#" class="btn">Contact me</a>
+                <a href="/contacts/contacts.html" class="btn">Contact me</a>
             </div>
         </div>
     </section>
