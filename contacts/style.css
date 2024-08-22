@@ -80,21 +80,25 @@ form textarea {
 }
 
 @media (max-width: 767.98px) {
+  section {
+    padding: 0 8px;
+  }
   .contact {
-      grid-gap: 2rem;
-      transition: .3s;
-      grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    grid-gap: 2rem;
+    transition: .3s;
+    grid-template-columns: 1fr;
   }
-  .contact-form {
-      order: 2;
+  .contact-form{
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .contact-img img {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      margin-bottom: 30px;
-  }
+
   .contact-form form input.btn {
     display: flex;
     justify-content: center;
