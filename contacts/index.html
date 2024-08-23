@@ -18,18 +18,19 @@
         </div>
     </nav>
 </header>
-  <section class=" contact">
+  <section class="contact">
       <div class="contact-form">
         <h1>Contact <span>Me</span></h1>
-        <p>I am available for freelance work.
-          Connect with me via email: mihai.iulian.lavric@gmail.com</p>
-        <form action="">
-          <input type="" placeholder="Your Name" required>
-          <input type="email" name="email" id="" placeholder="E-mail" required>
-          <input type="" placeholder="Write a Subject" required>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required>
-          </textarea>
-          <input type="submit" name="" value="Submit" class="btn">
+        <p>If you are intrested of working with me, 
+          connect with me by compiling this contact form</p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a27822a2-e04a-498b-88db-84408770b4fd">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="subject" placeholder="Write a Subject" required>
+          <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input type="submit" value="Submit" class="btn">
         </form>
       </div>
   </section>
