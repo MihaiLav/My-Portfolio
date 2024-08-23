@@ -212,22 +212,17 @@ span{
 
 .my-image {
     max-width: 100%;
-    border-radius: 5px;
 }
 
 
 .content-about {
+    padding: 0 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
     gap: 48px;
     flex-wrap: wrap;
-    background-color: var(--dark);
-    border-color: var(--border);
-    border-width: 2px;
-    border-style: inset;
-    padding: 32px;
 }
 
 .left-container {
@@ -440,6 +435,13 @@ footer{
     
 }
 
+@media (max-width: 1399.98px){
+    .content-about {
+        padding: 0;
+    }
+}
+
+
 @media(max-width: 767.98px){
     .nav-bar .logo img {
         width: 30px;
@@ -527,6 +529,10 @@ footer{
         font-size: 1.4rem !important;
     }
     
+    .my-image {
+        max-width: 300px;
+    }
+    
 
     .contact-title h2 {
         font-size: 3rem;
@@ -534,7 +540,7 @@ footer{
     .contact-container {
         padding: 24px 16px;
         display: flex;
-        margin: 0;
+        margin: 0 0 100px 0;
     }
     .contact-text {
         margin:0;
