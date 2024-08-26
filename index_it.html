@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo.svg">
+    <title>Il mio Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index_it.html'><img src='assets/img/Logo.svg'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#about">Chi sono</a></li>
+                    <li><a href="#projects">Progetti</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                    <div class="language-select">
+                        <a href="index.html">EN
+                            <svg class="en" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#071b65"></rect><path d="M5.101,4h-.101c-1.981,0-3.615,1.444-3.933,3.334L26.899,28h.101c1.981,0,3.615-1.444,3.933-3.334L5.101,4Z" fill="#fff"></path><path d="M22.25,19h-2.5l9.934,7.947c.387-.353,.704-.777,.929-1.257l-8.363-6.691Z" fill="#b92932"></path><path d="M1.387,6.309l8.363,6.691h2.5L2.316,5.053c-.387,.353-.704,.777-.929,1.257Z" fill="#b92932"></path><path d="M5,28h.101L30.933,7.334c-.318-1.891-1.952-3.334-3.933-3.334h-.101L1.067,24.666c.318,1.891,1.952,3.334,3.933,3.334Z" fill="#fff"></path><rect x="13" y="4" width="6" height="24" fill="#fff"></rect><rect x="1" y="13" width="30" height="6" fill="#fff"></rect><rect x="14" y="4" width="4" height="24" fill="#b92932"></rect><rect x="14" y="1" width="4" height="30" transform="translate(32) rotate(90)" fill="#b92932"></rect><path d="M28.222,4.21l-9.222,7.376v1.414h.75l9.943-7.94c-.419-.384-.918-.671-1.471-.85Z" fill="#b92932"></path><path d="M2.328,26.957c.414,.374,.904,.656,1.447,.832l9.225-7.38v-1.408h-.75L2.328,26.957Z" fill="#b92932"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+
+        <style>
+            @keyframes cursor{
+                to{
+                    border-left: 3px solid var(--primary);
+                }
+            }
+
+            @keyframes words{
+                0%, 20%{
+                    content: "Ux Designer";
+                }
+                21%, 40%{
+                    content: "WebDeveloper";
+                }
+                41%, 60%{
+                    content: "Ui Designer";
+                }
+                61%, 80%{
+                    content: "Sognatore";
+                }
+                81%, 100%{
+                    content: "Creatore digitale";
+                }
+            }
+
+        </style>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Ciao, sono <span>Mihai</span></h1>
+            <h3 class="typing-text">Sono un <span></span></h3>
+            <p>Mi piace aiutare i brand a creare la propria identità ed esprimere la mia creatività attraverso i lavori che progetto.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/mihai-iulian-lavric-b500382a8"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MihaiLav"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ux_mihai/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="contacts/index_it.html" class="btn">Lavoriamo insieme</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-section">
+            <div class="title-section">
+                <h2>Chi sono</h2>
+            </div>
+            <div class="content-about">
+                <div class="left-container">
+                    <img class="my-image" src="assets/img/cv.png">
+                </div>
+                <div class="right-container">
+                    <div class="card-description">
+                        <p>Sono un appassionato <span>UX/UI designer</span> con una forte inclinazione per la creazione di esperienze utente intuitive e coinvolgenti.
+                            <br><br>Mi dedico a comprendere le esigenze degli utenti per sviluppare soluzioni che non solo soddisfino le aspettative, ma che <span>superino le esperienze digitali ordinarie.</span>
+                            <br><br>Il mio approccio è <span>user-centric</span>, e credo che un design efficace derivi da una profonda comprensione dei comportamenti e delle motivazioni degli utenti. Cerco sempre nuove sfide e opportunità per migliorare e innovare nel campo del design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="title-section">
+            <h2>Le mie competenze</h2>
+        </div>
+        <div class="cards-section">
+            <div class="skill-card">
+                <div class="container-image">
+                    <img class="card-icon" src="assets/img/ux-icon.svg">
+                </div>
+                <div class="title-card">
+                    <h3>Design dell'Esperienza Utente (UX)</h3>
+                </div>
+                <ul class="card-description">
+                    <li>Progettazione percorsi utente intuitivi</li>
+                    <li>Ricerca sugli utenti per comprendere le loro esigenze e comportamenti</li>
+                    <li>Creazione wireframe e prototipi interattivi per testare e ottimizzare l'usabilità</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="container-image">
+                    <img class="card-icon" src="assets/img/ui-icon.svg">
+                </div>
+                <div class="title-card">
+                    <h3>Design dell'Interfaccia Utente (UI)</h3>
+                </div>
+                <ul class="card-description">
+                    <li>Conoscenza dei principi di design UI e delle migliori pratiche</li>
+                    <li>Competenza nell'uso di strumenti di design come Figma, Adobe Illustrator e Photoshop</li>
+                    <li>Capacità di creare design visivamente attraenti, coerenti e accessibili per varie piattaforme</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="container-image">
+                    <img class="card-icon" src="assets/img/dev icon.svg">
+                </div>
+                <div class="title-card">
+                    <h3>Prototipazione e Test</h3>
+                </div>
+                <ul class="card-description">
+                    <li>Creazione di prototipi ad alta fedeltà per visualizzare il design in azione</li>
+                    <li>Test e valutazione delle soluzioni di design per garantire un'esperienza utente ottimale</li>
+                    <li>Iterazione continua e miglioramento basato sul feedback degli utenti</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="title-section">
+            <h2>I miei lavori</h2>
+        </div>
+        <div class="cards-container">
+            <div class="card-content">
+                <a href="https://www.behance.net/gallery/206221471/Redesign-Buddhify-website" target="_blank" style="text-decoration: none;">
+                    <div class="img-container">
+                        <img class="project-img" src="assets/img/buddhify.jpg" alt="Copertina Buddhify">
+                    </div>
+                </a> 
+                <div class="title-card">
+                    <h2>Buddhify</h2>
+                </div>
+                <div class="card-description">
+                    <p>Ho realizzato il redesign del sito web di un'app di meditazione al fine di ottenere un'esperienza utente più serena, con elementi visivi e interattivi migliorati.</p>
+                </div>
+                <div class="button-project">
+                    <a href="https://www.behance.net/gallery/206221471/Redesign-Buddhify-website" target="_blank" class="btn">Visualizza il progetto completo</a>
+                </div>
+                
+            </div>
+            <div class="card-content">
+                <a href="https://www.behance.net/gallery/206220159/Brand-Guidelines-Medit-Active" target="_blank" style="text-decoration: none;">
+                    <div class="img-container">
+                        <img class="project-img" src="assets/img/meditactive.jpg" alt="Copertina MeditActive">
+                    </div> 
+                </a> 
+                <div class="title-card">
+                    <h2>MeditActive</h2>
+                </div>
+                <div class="card-description">
+                    <p>Ho sviluppato linee guida per un brand fittizzio, MeditActive e creato mockup per i social media per una brand identity completa e coerente.</p>
+                </div>
+                <div class="button-project">
+                    <a href="https://www.behance.net/gallery/206220159/Brand-Guidelines-Medit-Active" target="_blank" class="btn">Visualizza il progetto completo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-text">
+                <div class="contact-title">
+                    <h2>Lavoriamo <span>insieme</span> al tuo nuovo progetto</h2>
+                </div>
+                <div class="contact-info">
+                    <p>Che tu abbia un'idea rivoluzionaria pronta per essere realizzata o che tu abbia bisogno di assistenza con un progetto esistente,
+                        questo è il luogo perfetto per connetterti. <br> La tua visione è la forza trainante dietro la nostra collaborazione, e insieme possiamo trasformare le tue idee in realtà. <br> <br> Sentiti libero di contattarmi, e iniziamo insieme questa avventura creativa.
+                    </p>
+                </div>
+            </div>
+            <div class="button-contact">
+                <a href="contacts/index_it.html" class="btn">Contattami</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#">
+            <img src="assets/img/Logo.svg" class="logo" alt="logo-Mihai"></a>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/mihai-iulian-lavric-b500382a8"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MihaiLav"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Mihai_UI"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/ux_mihai/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <div class="legals">
+        <p>Tutti i diritti riservati &copy;. Progettato da <span>Mihai Lavric</span></p>
+    </div>
+</body>
+</html>

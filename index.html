@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Logo.svg">
-    <title>My portfolio</title>
+    <title>My Portfolio</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <ul class='nav-bar'>
-                <li class='logo'><a href='index.html'><img src='assets/img/Logo.svg'/></a></li>
-                <input type='checkbox' id='check' />
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="assets/img/Logo.svg" alt="Logo"/></a></li>
+                <input type="checkbox" id="check" />
                 <span class="menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <div class="language-select">
+                        <a href="index_it.html">IT
+                            <svg class="En" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path fill="#fff" d="M10 4H22V28H10z"></path>
+                                <path d="M5,4h6V28H5c-2.208,0-4-1.792-4-4V8c0-2.208,1.792-4,4-4Z" fill="#41914d"></path>
+                                <path d="M25,4h6V28h-6c-2.208,0-4-1.792-4-4V8c0-2.208,1.792-4,4-4Z" transform="rotate(180 26 16)" fill="#bf393b"></path>
+                                <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                                <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                            </svg>
+                        </a>
+                    </div>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -31,70 +42,68 @@
         <div class="home-content">
             <h1>Hi, It's <span>Mihai</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I like helping brands creating their own identity and express my creativity throughout the work I design.</p>
+            <p>I like helping brands create their own identity and express my creativity throughout the work I design.</p>
             <div class="social-icons">
                 <a href="https://linkedin.com/in/mihai-iulian-lavric-b500382a8"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/MihaiLav"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/Mihai_UI"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/ux_mihai/"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <a href="contacts/index.html" class="btn">Let's work together</a>
         </div>
     </section>
+
     <section id="about">
         <div class="about-section">
             <div class="title-section">
-                <h2>About me</h2></div>
+                <h2>About me</h2>
+            </div>
             <div class="content-about">
                 <div class="left-container">
-                    <img class="my-image" src="assets/img/cv.png">
+                    <img class="my-image" src="assets/img/cv.png" alt="Mihai Lavric">
                 </div>
                 <div class="right-container">
                     <div class="card-description">
                         <p>I am a passionate <span>UX/UI designer</span> with a strong inclination for creating intuitive and engaging user experiences. 
-                                <br> <br>I dedicate myself to understanding user needs to develop solutions that not 
-                                only meet expectations but also <span>surpass ordinary digital experiences.</span> 
-                                <br> <br>My approach is <span>user-centric</span>, and I believe that 
-                                effective design stems from a deep understanding of user behaviors and motivations. I am always seeking new challenges and 
-                                opportunities to improve and innovate in the field of design.</p>
+                        <br><br>I dedicate myself to understanding user needs to develop solutions that not only meet expectations but also <span>surpass ordinary digital experiences.</span> 
+                        <br><br>My approach is <span>user-centric</span>, and I believe that effective design stems from a deep understanding of user behaviors and motivations. I am always seeking new challenges and opportunities to improve and innovate in the field of design.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="title-section">
             <h2>My skills</h2>
         </div>
         <div class="cards-section">
             <div class="skill-card">
                 <div class="container-image">
-                    <img class="card-icon" src="assets/img/ux-icon.svg">
+                    <img class="card-icon" src="assets/img/ux-icon.svg" alt="UX Design Icon">
                 </div>
                 <div class="title-card">
                     <h3>User Experience (UX) Design</h3>
                 </div>
-                    <ul class="card-description">
-                        <li>Design intuitive user journeys</li>
-                        <li>Conduct user research to understand user needs and behaviors</li>
-                        <li>Create wireframes and interactive prototypes to test and optimize usability</li>
-                    </ul>
+                <ul class="card-description">
+                    <li>Design intuitive user journeys</li>
+                    <li>Conduct user research to understand user needs and behaviors</li>
+                    <li>Create wireframes and interactive prototypes to test and optimize usability</li>
+                </ul>
             </div>
             <div class="skill-card">
                 <div class="container-image">
-                    <img class="card-icon" src="assets/img/ui-icon.svg">
+                    <img class="card-icon" src="assets/img/ui-icon.svg" alt="UI Design Icon">
                 </div>
                 <div class="title-card">
                     <h3>User Interface (UI) Design</h3>
                 </div>
                 <ul class="card-description">
                     <li>Knowledge of UI design principles and best practices</li>
-                    <li>Proficiency in using design tools such as Figma, Adobe Illustrator and Photoshop</li>
+                    <li>Proficiency in design tools such as Figma, Adobe Illustrator, and Photoshop</li>
                     <li>Ability to create visually appealing, consistent, and accessible designs for various platforms</li>
                 </ul>
             </div>
             <div class="skill-card">
                 <div class="container-image">
-                    <img class="card-icon" src="assets/img/dev icon.svg">
+                    <img class="card-icon" src="assets/img/dev icon.svg" alt="Prototyping Icon">
                 </div>
                 <div class="title-card">
                     <h3>Prototyping and Testing</h3>
@@ -110,15 +119,15 @@
 
     <section id="projects">
         <div class="title-section">
-            <h2>my work</h2>
+            <h2>My Work</h2>
         </div>
         <div class="cards-container">
             <div class="card-content">
-                <a href="https://www.behance.net/gallery/206221471/Redesign-Buddhify-website" target="_blank" style="text-decoration: none;">
+                <a href="https://www.behance.net/gallery/206221471/Redesign-Buddhify-website" target="_blank">
                     <div class="img-container">
                         <img class="project-img" src="assets/img/buddhify.jpg" alt="Buddhify cover">
                     </div>
-                </a> 
+                </a>
                 <div class="title-card">
                     <h2>Buddhify</h2>
                 </div>
@@ -128,19 +137,18 @@
                 <div class="button-project">
                     <a href="https://www.behance.net/gallery/206221471/Redesign-Buddhify-website" target="_blank" class="btn">View full Project</a>
                 </div>
-                
             </div>
             <div class="card-content">
-                <a href="https://www.behance.net/gallery/206220159/Brand-Guidelines-Medit-Active" target="_blank" style="text-decoration: none;">
+                <a href="https://www.behance.net/gallery/206220159/Brand-Guidelines-Medit-Active" target="_blank">
                     <div class="img-container">
-                        <img class="project-img" src="assets/img/meditactive.jpg" alt="Buddhify cover">
-                    </div> 
-                </a> 
+                        <img class="project-img" src="assets/img/meditactive.jpg" alt="MeditActive cover">
+                    </div>
+                </a>
                 <div class="title-card">
                     <h2>MeditActive</h2>
                 </div>
                 <div class="card-description">
-                    <p>Developed brand guidelines and created social media mockups for a comprehensive and cohesive brand identity</p>
+                    <p>Developed brand guidelines and created social media mockups for a comprehensive and cohesive brand identity.</p>
                 </div>
                 <div class="button-project">
                     <a href="https://www.behance.net/gallery/206220159/Brand-Guidelines-Medit-Active" target="_blank" class="btn">View full Project</a>
@@ -148,7 +156,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="contact">
         <div class="contact-container">
             <div class="contact-text">
@@ -156,10 +164,7 @@
                     <h2>Let's work <span>together</span> on your new project</h2>
                 </div>
                 <div class="contact-info">
-                    <p>Whether you have a groundbreaking idea waiting to be brought to life or you need assistance with an existing project, 
-                        this is the perfect place to connect. <br> Your vision is the driving force behind our collaboration, and together, 
-                        we can turn your ideas into reality. <br> <br> Feel free to reach out, and let's begin this creative adventure together.
-                    </p>
+                    <p>Whether you have a groundbreaking idea waiting to be brought to life or you need assistance with an existing project, this is the perfect place to connect. Your vision is the driving force behind our collaboration, and together, we can turn your ideas into reality. <br><br> Feel free to reach out, and let's begin this creative adventure together.</p>
                 </div>
             </div>
             <div class="button-contact">
@@ -169,17 +174,18 @@
     </section>
 
     <footer>
-        <a href="#">
-            <img src="assets/img/Logo.svg" class="logo" alt="logo-Mihai"></a>
-         <div class="social-icons">
+        <a href="#"><img src="assets/img/Logo.svg" class="logo" alt="Logo Mihai"></a>
+        <div class="social-icons">
             <a href="https://linkedin.com/in/mihai-iulian-lavric-b500382a8"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/MihaiLav"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/Mihai_UI"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/ux_mihai/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/MihaiLav"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Mihai_UI"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/ux_mihai/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+    
     <div class="legals">
         <p>All rights reserved &copy;. Designed by <span>Mihai Lavric</span></p>
     </div>
+
 </body>
 </html>
