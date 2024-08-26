@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/Logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class='nav-bar'>
+          <div class='logo'><a href='../index_it.html'><img src="../assets/img/Logo.svg"/></a>
+          </div>
+        </div>
+    </nav>
+</header>
+  <section class="contact">
+      <div class="contact-form">
+        <h1>Mettiamoci in <span>Contatto</span></h1>
+        <p>Se sei interessato a lavorare con me, contattami compilando questo breve modulo.</p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a27822a2-e04a-498b-88db-84408770b4fd">
+          <input type="text" name="name" placeholder="Il tuo nome" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="subject" placeholder="Oggetto" required>
+          <textarea name="message" cols="30" rows="10" placeholder="Il tuo messaggio" required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input type="submit" value="Invia" class="btn">
+        </form>
+      </div>
+  </section>
+</body>
+</html>
