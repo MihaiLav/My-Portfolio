@@ -12,10 +12,12 @@
 
 :root {
     --primary: #c41016;
+    --primary-10: rgba(196, 16, 22, 0.05) ;
     --white: white; 
+    --light: #f7f7f7;
+    --border-light: #f0f0f0;
     --background: #050505;
     --dark: #080808;
-    --border: #0e0e0e;
 }
 
 html{
@@ -27,10 +29,13 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #050505;
-    color: white;
+    background-color: white;
+    color: var(--dark);
 }
-
+p {
+    color: var(--background);
+    font-weight: 500;
+}
 .nav-bar {
     width: 100%;
     display: flex;
@@ -38,7 +43,8 @@ body{
     align-items: center;
     list-style: none;
     position: fixed;
-    background-color: var(--background);
+    background-color: white;
+    border-bottom: 1px solid var(--primary-10);
     padding: 24px 200px;
     z-index: 100;
 }
@@ -49,7 +55,7 @@ body{
     font-size: 1.8rem;
     display: inline-block;
     text-decoration: none;
-    color: var(--white);
+    color: var(--dark);
     text-align: center;
     padding: 10px 0;
     transition: 0.15s ease-in-out;
@@ -85,7 +91,7 @@ body{
 
 .language-select a {
     text-decoration: none;
-    color: white;
+    color: var(--dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +126,7 @@ section.home{
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    background-color: rgb(5, 5, 5);
+    background-color: white;
 }
 
 .home .home-content h1{
@@ -150,11 +156,10 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid var(--primary);
     font-size: 2rem;
     border-radius: 50%;
     transition: 0.3s ease;
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .social-icons a:not(:last-child) {
@@ -164,8 +169,8 @@ span{
 
 .social-icons a:hover{
     color: var(--dark);
-    transform: scale(1.2) translateY(-5px);
-    background-color: var(--primary);
+    transform: scale(1.2);
+    background-color: white;
     box-shadow: 0  0 25px var(--primary);
 }
 
@@ -173,13 +178,12 @@ span{
     display: inline-block;
     width: auto;
     padding: 1rem 2.8rem;
-    background-color: rgb(5, 5, 5);
+    background-color: var(--primary);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: var(--primary);
+    color: white;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid var(--primary);
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -187,8 +191,9 @@ span{
 .btn:hover{
     transform: scale3d(1.03);
     background-color: var(--primary);
-    color: var(--dark);
+    color: white;
     box-shadow: 0 0 25px var(--primary);
+    border: none;
 }
 
 .typing-text{
@@ -209,7 +214,7 @@ span{
 
 .typing-text span::after{
     content: "";
-    background-color: var(--background);
+    background-color: white;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -252,8 +257,6 @@ span{
     flex: 1;
 }
 
-
-
 .title-card {
     font-size: 2rem;
     margin: 32px 0;
@@ -264,7 +267,8 @@ span{
 .contact-info {
     list-style: none;
     font-size: 1.6rem;
-    color: white;
+    color: var(--dark);
+    font-weight: 500;
     line-height: 1.5;
 }
 
@@ -277,10 +281,10 @@ span{
     flex: 33;
     flex-direction: column;
     min-width: 331px;
-    background-color: var(--dark);
+    background-color: var(--light);
     border-radius: 5px;
     padding: 32px;
-    border: 2px solid var(--border);
+    border: 2px solid var(--border-light);
 }
 
 .container-image {
@@ -289,7 +293,9 @@ span{
 
 .card-icon {
     width: 4rem;
-    filter: drop-shadow(0px 0px 12px white);
+    filter: drop-shadow(0px 0px 48px white);
+     background-color: var(--white);
+     border-radius: 5px;
 }
 
 .cards-section {
@@ -310,8 +316,8 @@ span{
 }
 
 .card-content .btn{
-    background-color: var(--dark);
-    color: white;
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 .card-content .card-description {
@@ -334,15 +340,17 @@ span{
 .img-container {
     width: 100%;
     padding: 30px 45px;
-    background-color: var(--dark);
+    background-color: var(--light);
     border-radius: 5px;
-    border: 2px solid var(--border);
+    border: 2px solid var(--border-light);
+    
 }
 
 .img-container:hover {
-    box-shadow: 0  0 5px var(--primary);
     transition: 0.6s ease;
     cursor: pointer;
+    color: white;
+    box-shadow: 0 0 25px var(--primary); 
 }
 .img-container img:hover {
     transform: scale(1.05);
@@ -360,9 +368,9 @@ span{
     flex-direction: column;
     justify-content: center;
     padding: 120px 60px;
-    background-color: var(--dark);
+    background-color: var(--light);
     gap: 4rem;
-    border: 2px solid var(--border);
+    border: 2px solid var(--border-light);
 }
 
 .contact-container p {
@@ -379,11 +387,11 @@ footer{
     align-items: center;
     flex-direction: column;
     height: 200px;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .legals {
-    background-color: #0e0e0e;
+    background-color: var(--border-light);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -392,7 +400,7 @@ footer{
 
 .legals p{
     font-size: 1rem;
-    color: white;
+    color:var (--dark);
 }
 @keyframes cursor{
     to{
@@ -470,13 +478,18 @@ footer{
         top: 0px;
         right: -100%;
         z-index: 1000;
-        background-color: var(--background);
+        background-color: var(--light);
         transition: all 0.2s ease-in-out;
         scroll-behavior: none;
     }
     .menu li {margin-top: 48px;}
     .menu li a {padding: 16px;}
-    .open-menu , .close-menu {display: block;}
+    .open-menu , .close-menu {display: block;
+        color: var(--dark);
+    }
+    .close-menu {
+        color: var(--primary);
+    }
     #check:checked ~ .menu {right: 0;}
     .nav-bar {
         top: 0px;

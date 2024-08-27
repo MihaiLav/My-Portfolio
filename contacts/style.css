@@ -1,5 +1,15 @@
+:root {
+  --primary: #c41016;
+  --primary-10: rgba(196, 16, 22, 0.05) ;
+  --white: white; 
+  --light: #f7f7f7;
+  --border-light: #f0f0f0;
+  --background: #050505;
+  --dark: #080808;
+}
+
 .contact {
-  background-color: var(--background);
+  background-color: white;
   height: 100%;
   width: 100%;
   display: grid;
@@ -13,7 +23,7 @@
 }
 
 .contact-form p {
-  color: white;
+  color: var(--dark);
   letter-spacing: 1px;
   line-height: 26px;
   font-size: 1.6rem;
@@ -25,7 +35,7 @@
 }
 
 .contact-form form input:focus {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border-light);
   transition: 0.5s ease;
 }
 
@@ -35,8 +45,8 @@ form textarea {
   width: 100%;
   padding: 17px;
   outline: none;
-  background: var(--dark);
-  color: white;
+  background: var(--light);
+  color: var(--dark);
   font-size: 1.6rem;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -48,17 +58,17 @@ form textarea {
 }
 
 .contact-form textarea:focus {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--border-light);
   transition: 0.5s ease;
 }
 .contact-form form input.btn {
   display: inline-block;
   width: 270px;
   padding: 1rem 2.8rem;
-  background-color: var(--dark);
+  background-color: var(--primary);
   border-radius: 4rem;
   font-size: 1.6rem;
-  color: var(--primary);
+  color: white;
   letter-spacing: 0.3rem;
   font-weight: 600;
   border: 2px solid var(--primary);
@@ -67,7 +77,6 @@ form textarea {
 }
 .contact-form form input.btn:hover {
   background-color: var(--primary);
-  color: #050505;
 }
 
 .logo{
