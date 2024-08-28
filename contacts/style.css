@@ -7,9 +7,7 @@
   --background: #050505;
   --dark: #080808;
 }
-body {
-  overflow: none;
-}
+
 .contact {
   background-color: white;
   height: 100%;
