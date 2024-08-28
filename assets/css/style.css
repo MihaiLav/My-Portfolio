@@ -12,10 +12,9 @@
 
 :root {
     --primary: #c41016;
-    --primary-10: rgba(196, 16, 22, 0.05) ;
+    --primary-10: #c410160d ;
     --white: white; 
-    --light: #f7f7f7;
-    --border-light: #f0f0f0;
+    --light: #f8f8f8;
     --background: #050505;
     --dark: #080808;
 }
@@ -26,7 +25,7 @@ html{
 }
 
 body{
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     overflow-x: hidden;
     background-color: white;
@@ -192,7 +191,7 @@ span{
     transform: scale3d(1.03);
     background-color: var(--primary);
     color: white;
-    box-shadow: 0 0 25px var(--primary);
+    box-shadow: 0 0 16px var(--primary);
     border: none;
 }
 
@@ -234,6 +233,22 @@ span{
 
 .my-image {
     max-width: 80%;
+    z-index: 2;
+    position: relative;
+    background-color: var(--light);
+    border-radius: 10px;
+}
+
+
+.shape {
+    height: 100%;
+    width: 80%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
 }
 
 
@@ -250,6 +265,8 @@ span{
     display: flex;
     flex: 1;
     min-width: 100px;
+    position: relative;
+
 }
 
 .right-container {
@@ -282,9 +299,8 @@ span{
     flex-direction: column;
     min-width: 331px;
     background-color: var(--light);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 32px;
-    border: 2px solid var(--border-light);
 }
 
 .container-image {
@@ -293,9 +309,7 @@ span{
 
 .card-icon {
     width: 4rem;
-    filter: drop-shadow(0px 0px 48px white);
-     background-color: var(--white);
-     border-radius: 5px;
+    filter: drop-shadow(0px 0px 2px white);
 }
 
 .cards-section {
@@ -317,8 +331,10 @@ span{
 
 .card-content .btn{
     background-color: var(--light);
-    color: var(--dark);
+    color: var(--primary);
+    font-weight: 900;
 }
+
 
 .card-content .card-description {
     margin-bottom: 32px;
@@ -335,14 +351,14 @@ span{
 
 .project-img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 .img-container {
     width: 100%;
     padding: 30px 45px;
-    background-color: var(--light);
-    border-radius: 5px;
-    border: 2px solid var(--border-light);
+    background-color: white;
+    border-radius: 10px;
     
 }
 
@@ -350,7 +366,7 @@ span{
     transition: 0.6s ease;
     cursor: pointer;
     color: white;
-    box-shadow: 0 0 25px var(--primary); 
+    box-shadow: 0 0 24px var(--primary-10); 
 }
 .img-container img:hover {
     transform: scale(1.05);
@@ -370,7 +386,7 @@ span{
     padding: 120px 60px;
     background-color: var(--light);
     gap: 4rem;
-    border: 2px solid var(--border-light);
+
 }
 
 .contact-container p {
@@ -562,6 +578,10 @@ footer{
     
     .my-image {
         max-width: 300px;
+    }
+
+    .shape {
+        width: 100%;
     }
     
 
