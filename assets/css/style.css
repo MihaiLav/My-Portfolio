@@ -386,6 +386,7 @@ span{
     padding: 120px 60px;
     background-color: var(--light);
     gap: 4rem;
+    border-radius: 10px;
 
 }
 
