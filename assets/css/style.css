@@ -499,13 +499,10 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
-    
-}
-
-@media (max-width: 1399.98px){
     .content-about {
         padding: 0;
     }
+    
 }
 
 
@@ -514,7 +511,7 @@ footer{
         width: 30px;
     }
     .nav-bar {
-        padding: 16px 50px;
+        padding: 16px 5%;
     }
 
     .menu {
@@ -535,9 +532,11 @@ footer{
     .menu li a {padding: 16px;}
     .open-menu , .close-menu {display: block;
         color: var(--dark);
+        right: 5%;
     }
     .close-menu {
         color: var(--primary);
+        right: 8.5%;
     }
     #check:checked ~ .menu {right: 0;}
     .nav-bar {
