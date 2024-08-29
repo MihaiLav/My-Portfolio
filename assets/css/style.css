@@ -211,8 +211,6 @@ span{
     border: none;
 }
 
-
-
 .btn:hover{
     transform: scale3d(1.03);
     background-color: var(--primary);
@@ -232,7 +230,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "";
     color: var(--primary);
     animation: words 20s infinite;
 }
@@ -241,7 +239,7 @@ span{
     content: "";
     background-color: white;
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(80% + 8px);
     height: 100%;
     border-left: 3px solid  var(--background);
     right: -8;
@@ -462,7 +460,7 @@ footer{
         content: "Ux Designer";
     }
     21%, 40%{
-        content: "WebDeveloper";
+        content: "Web Developer";
     }
     41%, 60%{
         content: "Ui Designer";
