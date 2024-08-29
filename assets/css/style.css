@@ -239,7 +239,7 @@ span{
     content: "";
     background-color: white;
     position: absolute;
-    width: calc(80% + 8px);
+    width: calc(20% + 8px);
     height: 100%;
     border-left: 3px solid  var(--background);
     right: -8;
