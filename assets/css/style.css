@@ -131,7 +131,6 @@ section.home{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
     background-color: var(--background);
 }
 
@@ -258,14 +257,14 @@ span{
     font-size: 2rem;
     color: var(--light);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .my-image {
     max-width: 80%;
     z-index: 2;
     position: relative;
-    background-color: var(--light);
+    background-color: var(--dark);
     border-radius: 24px;
 }
 
@@ -283,11 +282,9 @@ span{
 
 
 .content-about {
-    padding: 0 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
     flex-wrap: wrap;
 }
 
@@ -349,13 +346,14 @@ span{
     gap: 24px;
 }
 
-.card-content {
+.card-container {
     display: flex;
-    flex: 50;
     flex-direction: column;
+    border-radius: 24px;
+    padding: 48px;
 }
 
-.card-content .title-card {
+.cards-container .title-card {
     margin-bottom: 16px;
 }
 
@@ -371,42 +369,27 @@ span{
     color: white;
 }
 
-
 .card-content .card-description {
     margin-bottom: 32px;
 }
 
 .cards-container {
-    display: flex;
-    flex: 1 1 50;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    gap: 24px;
-    
+    gap: 64px;
 }
 
 .project-img {
     max-width: 100%;
-    border-radius: 16px;
-}
-
-.img-container {
-    width: 100%;
-    padding: 30px 45px;
-    background-color: var(--dark);
     border-radius: 24px;
-    
 }
 
-.img-container:hover {
+
+.card-container:hover {
     transition: 0.6s ease;
-    cursor: pointer;
     color: var(--dark);
     box-shadow: 0 0 48px var(--primary-50); 
-}
-.img-container img:hover {
-    transform: scale(1.05);
-    transition: 1.2s;
 }
 
 .contact-title {
@@ -480,8 +463,7 @@ footer{
 
 
 
-@media (max-width: 1399.98px){
-
+@media (max-width: 1399.98px) {
     .nav-bar {
         padding: 24px 3%;
         transition: .2s;
@@ -490,14 +472,16 @@ footer{
         padding: 80px 3%;
         transition: .2s;
     }
-
-    .home{
+    .home {
         gap: 4rem;
     }
     .cards-container {
-        flex-direction: column;
+        grid-template-columns: auto;
     }
-    .card-content {
+    .img-container {
+        max-height: 50%;
+    }
+    .card-container {
         margin-bottom: 48px;
     }
     .contact-container {
@@ -507,9 +491,7 @@ footer{
     .content-about {
         padding: 0;
     }
-    
 }
-
 
 @media(max-width: 767.98px){
     .nav-bar .logo img {
@@ -540,7 +522,7 @@ footer{
         right: 5%;
     }
     .close-menu {
-        color: var(--primary);
+        color: var (--primary);
         right: 8.5%;
     }
     #check:checked ~ .menu {right: 0;}
@@ -559,7 +541,6 @@ footer{
         bottom: 10px;
         right: 20px;
     }
-
 }
 
 @media(max-width:767.98px){
@@ -568,7 +549,11 @@ footer{
         flex-direction: column;
         margin: 5rem 4rem;
     }
-
+    section.home{
+        min-height: 80svh;
+        padding: 24px;
+        margin: 16px;
+    }
     .home .home-content h3{
         font-size: 2.5rem;
     }
@@ -581,7 +566,6 @@ footer{
         width: 70vw;
         margin-top: 4rem;
     }
-  
     .contact-container {
         flex-direction: column;
     }
@@ -598,7 +582,7 @@ footer{
     section {
         transition: .3s ease-in-out;
         padding: 8px;
-        margin: 200px 8px 0 8px;
+        margin: 128px 8px 0 8px;
     }
     h1 {
         font-size: 4rem !important;
@@ -621,7 +605,6 @@ footer{
         width: 100%;
     }
     
-
     .contact-title h2 {
         font-size: 3rem;
     }
@@ -641,7 +624,7 @@ footer{
     }
 
     .btn2 {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .button-contact, .button-contact a {
@@ -652,7 +635,16 @@ footer{
     .card-icon {
         width: 4rem;
     }
+    .card-container {
+        padding: 16px;
+    }
+    .card-content{
+        padding-bottom: 24px;
+    }
+    .project-img {
+        margin-bottom: -16px;
+    }
     .img-container {
-        padding: 20px 25px;
+        min-width: 300px;
     }
 }
