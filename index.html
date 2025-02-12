@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="icon" type="image/x-icon" href="assets/img/Logo.svg">
     <meta property="og:title" content="My Portfolio"/>
     <meta property="og:type" content="website"/>
@@ -56,6 +57,7 @@
             <a href="contacts/index.html" class="btn">Let's work together</a>
             <a href="assets/img/cv-en.pdf" rel="noopener" target="_blank" class="btn2">My CV</a>
         </div>
+        <div class="mouse"></div>
     </section>
 
     <section id="projects">
@@ -63,7 +65,8 @@
             <h2>My Work</h2>
         </div>
         <div class="cards-container">
-            <div class="card-container">
+            <div class="card-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="card-content">
                     <div class="img-container">
                         <img class="project-img" src="assets/img/Demar.png" alt="Project Demar cover">
@@ -79,7 +82,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="card-content">
                     <div class="img-container">
                         <img class="project-img" src="assets/img/Travelnest.png" alt="Project Travelnest cover">
@@ -95,7 +99,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="card-content">
                     <div class="img-container">
                         <img class="project-img" src="assets/img/Buddhify.png" alt="Project Buddhify cover">
@@ -112,7 +117,8 @@
                 </div>
             </div>
            
-            <div class="card-container">
+            <div class="card-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="card-content">
                     <div class="img-container">
                          <img class="project-img" src="assets/img/meditactive.jpg" alt="Project MeditActive cover">
@@ -137,11 +143,11 @@
                 <h2>About me</h2>
             </div>
             <div class="content-about">
-                <div class="left-container">
+                <div class="left-container" data-aos="fade-right">
                     <div class="shape"></div>
                     <img class="my-image" src="assets/img/cv.jpg" alt="Mihai Lavric">
                 </div>
-                <div class="right-container">
+                <div class="right-container" data-aos="fade-left">
                     <div class="card-description">
                         <p>I am a passionate <span>UX/UI designer</span> with a strong inclination for creating intuitive and engaging user experiences. 
                         <br><br>I dedicate myself to understanding user needs to develop solutions that not only meet expectations but also <span>surpass ordinary digital experiences.</span> 
@@ -155,7 +161,7 @@
     
 
     <section id="contact">
-        <div class="contact-container">
+        <div class="contact-container" data-aos="fade-up">
             <div class="contact-text">
                 <div class="contact-title">
                     <h2>Let's work <span>together</span> on your new project</h2>
@@ -183,5 +189,11 @@
         <p>All rights reserved &copy;. Designed by <span>Mihai Lavric</span></p>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
