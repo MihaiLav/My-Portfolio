@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 864">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="468" y1="136" x2="468" y2="1000" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="252" y1="496" x2="252" y2="1000" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="72" y1="136" x2="72" y2="712" gradientTransform="translate(0 1000) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dd1219"/>
+      <stop offset=".27" stop-color="#d31117"/>
+      <stop offset=".57" stop-color="#c41016"/>
+      <stop offset=".87" stop-color="#ac0e14"/>
+      <stop offset=".99" stop-color="#930c11"/>
+    </linearGradient>
+  </defs>
+  <g id="logo_2" data-name="logo 2">
+    <g>
+      <polygon class="cls-1" points="720 0 720 864 576 720 576 576 360 792 216 648 216 504 360 648 576 432 576 144 720 0"/>
+      <polygon class="cls-2" points="504 216 504 360 360 504 0 144 0 0 360 360 504 216"/>
+      <polygon class="cls-3" points="144 432 144 720 0 864 0 288 144 432"/>
+    </g>
+  </g>
+</svg>
